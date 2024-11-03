@@ -1,4 +1,4 @@
-import 'package:body_calculator/screens/home_screen.dart';
+import 'package:body_calculator/screens/input_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -24,10 +24,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Body Calculator',
       theme: ThemeData(
+        fontFamily: 'GOTHIC',
         brightness: Brightness.dark,
-        useMaterial3: false,
+        scaffoldBackgroundColor: Colors.black,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black,
+        ),
+        useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const InputScreen(),
     );
   }
 }
